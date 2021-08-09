@@ -2,6 +2,6 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.6
 
 COPY ./app /app/app
 
-COPY ./server_requirements.txt ./requirements.txt
+COPY ./requirements ./requirements
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements/server.txt

@@ -9,7 +9,8 @@ container:
 docker: image container
 
 clean:
-	docker rm --force ml_server
+	docker rm --force ml_server_container
+	docker image rm ml_server
 
 ######### CLIENT
 
