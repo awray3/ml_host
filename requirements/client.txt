@@ -1,3 +1,3 @@
 requests
 rich
-datamodel-code-generator[datagen]
+datamodel-code-generator
