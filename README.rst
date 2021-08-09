@@ -1,11 +1,15 @@
-Template for Launching an ML App in a FastAPI Server
-####################################################
+Model Host
+##########
+Model Host is a template for mock-deployment of a machine-learning model
+built with Docker and `FastAPI <https://fastapi.tiangolo.com/>`_.
 
-This repo is a template for taking a machine learning model 
-and mock-deploying it in a local docker container using `FastAPI <https://fastapi.tiangolo.com/>`_.
 
 Usage
 =====
+To use this template, all you need to do is replace your model code in :code:`model.py` 
+and write (or generate) a Pydantic `data model <https://pydantic-docs.helpmanual.io/usage/models/j>`_ 
+in :code:`data_model.py`. 
+This data model should specify the input to your model's entrypoint.
 
 I hope to make this into a `Cookiecutter <https://cookiecutter.readthedocs.io/en/1.7.3/>`_ template one day, but until then use it by modifying 
 the parts you need by hand.
@@ -46,7 +50,7 @@ Optionally, you can use `datamodel-code-generator <https://github.com/koxudaxi/d
 
     make data_model
 
-Then just read over the generated python script and double-check it matches what you are expecting.
+Then read over the generated python script and double-check it matches what you are expecting.
 
 
 Launching
@@ -78,6 +82,8 @@ Send Data to the Model
 ======================
 
 You can modify the :code:`send_data.py` script as needed to send data to the model.
+All you need to do is send a :code:`POST` request (with your json input)
+on port 8000.
 If you wish, you can use :code:`make send` to run the script.
 
 
