@@ -2,7 +2,7 @@ Model Host
 ##########
 Model Host is a template for mock-deployment of a machine-learning model
 built with Docker and `FastAPI <https://fastapi.tiangolo.com/>`_.
-Its main purpose is to launche a docker container running a `uvicorn <https://www.uvicorn.org/>`_ server
+Its main purpose is to launch a docker container running a `uvicorn <https://www.uvicorn.org/>`_ server
 that can accept model inputs via POST requests.
 
 
