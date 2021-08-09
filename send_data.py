@@ -1,5 +1,4 @@
 import json
-from os import name
 import requests
 from rich import print
 from pathlib import Path
