@@ -1,0 +1,4 @@
+.dockerignore
+generate_requirements.txt
+*.json
+send_data.py
