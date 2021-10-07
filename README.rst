@@ -23,7 +23,7 @@ For sending data, install the client requirements:
 
 .. code::
     
-    pip install -r requirements/client.py
+    pip install -r requirements/client.txt
 
 
 Optionally, if you want to use datagen to make your Pydantic data models, 
